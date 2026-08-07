@@ -1,3 +1,5 @@
+import tailwindcss from '@tailwindcss/vite'
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
 
@@ -5,7 +7,34 @@ export default defineNuxtConfig({
     enabled: true,
   },
 
-  modules: ['@nuxtjs/i18n'],
+  modules: ['@nuxtjs/i18n', '@nuxt/fonts'],
+
+  fonts: {
+  families: [
+    {
+      name: 'Vazirmatn',
+      provider: 'google',
+      weights: ['100 900'],
+      styles: ['normal'],
+      subsets: ['arabic', 'latin'],
+      global: true,
+    },
+    {
+      name: 'Inter',
+      provider: 'google',
+      weights: ['100 900'],
+      styles: ['normal'],
+      subsets: ['latin'],
+      global: true,
+    },
+  ],
+},
+
+  css: ['~/assets/css/main.css'],
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
 
   i18n: {
     defaultLocale: 'fa',
