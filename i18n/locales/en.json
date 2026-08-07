@@ -1,0 +1,27 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About"
+  },
+  "home": {
+    "title": "Artovia",
+    "subtitle": "Handcrafted art for unique spaces."
+  },
+  "about": {
+    "title": "About Artovia",
+    "description": "Artovia showcases handcrafted decorative products created by talented artisans."
+  },
+  "footer": {
+    "tagline": "Handcrafted decorative art"
+  },
+ "seo": {
+  "home": {
+    "title": "Artovia — Handcrafted Art for Unique Spaces",
+    "description": "Discover unique handcrafted decorative products and artworks created by talented Iranian artisans."
+  },
+  "about": {
+    "title": "About Artovia — Our Story and Mission",
+    "description": "Learn about Artovia and our mission to showcase unique handcrafted decorative products created by Iranian artisans."
+  }
+}
+}

@@ -1,6 +1,11 @@
+<script setup lang="ts">
+const i18nHead = useLocaleHead()
+
+useHeadSafe(i18nHead)
+</script>
+
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
