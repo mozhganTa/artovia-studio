@@ -1,0 +1,44 @@
+@import "tailwindcss/index.css";
+
+@theme {
+  --color-brand: #a65f3b;
+  --color-brand-dark: #743f2a;
+
+  --color-canvas: #faf7f2;
+  --color-surface: #ffffff;
+
+  --color-ink: #2d2520;
+  --color-muted: #746860;
+  --color-line: #e7ddd4;
+
+  --color-success: #477a59;
+  --color-danger: #b54747;
+}
+
+@layer base {
+  html:lang(fa) {
+    font-family: "Vazirmatn", sans-serif;
+  }
+
+  html:lang(en) {
+    font-family: "Inter", sans-serif;
+  }
+
+  body {
+    min-height: 100vh;
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
