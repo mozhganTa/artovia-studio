@@ -5,7 +5,38 @@
   },
   "home": {
     "title": "Artovia",
-    "subtitle": "Handcrafted art for unique spaces."
+    "subtitle": "Handcrafted art for unique spaces.",
+    "hero": {
+      "eyebrow": "Authentic art for modern homes",
+      "title": "Every piece tells a story in your space",
+      "description": "Discover handcrafted decorative pieces shaped by artistry, detail, and the stories of Iranian artisans.",
+      "primaryAction": "Explore the collection",
+      "secondaryAction": "Our story"
+    },
+    "categories": {
+      "eyebrow": "Selected categories",
+      "title": "Art that reflects your taste",
+      "description": "Explore different styles and materials to find a piece that belongs in your space.",
+      "items": {
+        "copper": {
+          "title": "Copper artworks",
+          "description": "Hand-engraved copper pieces shaped by traditional craftsmanship."
+        },
+        "ceramic": {
+          "title": "Ceramic wall art",
+          "description": "Distinctive ceramic pieces designed for warm and expressive spaces."
+        },
+        "painting": {
+          "title": "Paintings and color",
+          "description": "Handmade artworks featuring acrylic colors and artistic patterns."
+        }
+      }
+    },
+    "featuredProducts": {
+      "eyebrow": "Selected by Artovia",
+      "title": "Featured products",
+      "description": "A selection of handmade pieces carefully created by Iranian artists."
+    }
   },
   "about": {
     "title": "About Artovia",
@@ -14,14 +45,22 @@
   "footer": {
     "tagline": "Handcrafted decorative art"
   },
- "seo": {
-  "home": {
-    "title": "Artovia — Handcrafted Art for Unique Spaces",
-    "description": "Discover unique handcrafted decorative products and artworks created by talented Iranian artisans."
+  "seo": {
+    "home": {
+      "title": "Artovia — Handcrafted Art for Unique Spaces",
+      "description": "Discover unique handcrafted decorative products and artworks created by talented Iranian artisans."
+    },
+    "about": {
+      "title": "About Artovia — Our Story and Mission",
+      "description": "Learn about Artovia and our mission to showcase unique handcrafted decorative products created by Iranian artisans."
+    }
   },
-  "about": {
-    "title": "About Artovia — Our Story and Mission",
-    "description": "Learn about Artovia and our mission to showcase unique handcrafted decorative products created by Iranian artisans."
+  "common": {
+    "currency": "Toman"
+  },
+  "products": {
+    "imagePlaceholder": "Product image",
+    "available": "Available",
+    "unavailable": "Unavailable"
   }
-}
 }
