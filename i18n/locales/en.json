@@ -62,5 +62,11 @@
     "imagePlaceholder": "Product image",
     "available": "Available",
     "unavailable": "Unavailable"
-  }
+  },
+  "productDetails": {
+  "breadcrumb": "Breadcrumb",
+  "material": "Material",
+  "dimensions": "Dimensions",
+  "notFound": "The requested product was not found"
+}
 }
