@@ -62,5 +62,11 @@
     "imagePlaceholder": "تصویر محصول",
     "available": "موجود",
     "unavailable": "ناموجود"
-  }
+  },
+  "productDetails": {
+  "breadcrumb": "مسیر صفحه",
+  "material": "جنس",
+  "dimensions": "ابعاد",
+  "notFound": "محصول موردنظر پیدا نشد"
+}
 }

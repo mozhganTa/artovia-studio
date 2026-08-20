@@ -12,3 +12,14 @@ export interface ProductPreview {
   imageUrl?: string
   isAvailable: boolean
 }
+
+export interface Product extends ProductPreview {
+  description: LocalizedText
+  material: LocalizedText
+  dimensions: LocalizedText
+}
+export interface Product extends ProductPreview {
+  description: LocalizedText
+  material: LocalizedText
+  dimensions: LocalizedText
+}
