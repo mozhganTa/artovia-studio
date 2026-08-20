@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import HomeHero from "~/features/home/components/HomeHero.vue";
+import HomeFeaturedCategories from "~/features/home/components/HomeFeaturedCategories.vue";
+import HomeFeaturedProducts from "~/features/home/components/HomeFeaturedProducts.vue";
 const { t } = useI18n();
 
 useSeoMeta({
@@ -12,13 +15,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <AppContainer class="py-16">
-    <h1 class="text-4xl font-bold text-brand">
-      {{ $t("home.title") }}
-    </h1>
-
-    <p class="mt-4 text-lg text-muted">
-      {{ $t("home.subtitle") }}
-    </p>
-  </AppContainer>
+  <HomeHero />
+  <HomeFeaturedCategories/>
+  <HomeFeaturedProducts/>
 </template>
