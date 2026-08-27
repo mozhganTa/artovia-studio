@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getProductBySlug } from '~/features/products/services/product.service'
+import { getProductBySlug } from "~/features/products/services/product.service";
 const route = useRoute();
 const localePath = useLocalePath();
 const { t } = useI18n();
@@ -8,43 +8,51 @@ const slug = Array.isArray(route.params.slug)
   ? route.params.slug[0]
   : route.params.slug;
 
-const { data: productData } = await useAsyncData(
-  `product-${slug}`,
-  () => getProductBySlug(slug),
-)
+const { data: productData } = await useAsyncData(`product-${slug}`, () =>
+  getProductBySlug(slug),
+);
 
 if (!productData.value) {
   throw createError({
     statusCode: 404,
-    statusMessage: t('productDetails.notFound'),
-  })
+    statusMessage: t("productDetails.notFound"),
+  });
 }
 
-const product = computed(() => productData.value!)
+const product = computed(() => productData.value!);
+const cartStore = useCartStore();
+
+function handleAddToCart() {
+  if (!product.value || !product.value.isAvailable) {
+    return;
+  }
+
+  cartStore.addItem(product.value);
+}
 
 const productTitle = useLocalizedText(() => {
-  return product.value.title
-})
+  return product.value.title;
+});
 
 const productCategory = useLocalizedText(() => {
-  return product.value.category
-})
+  return product.value.category;
+});
 
 const productDescription = useLocalizedText(() => {
-  return product.value.description
-})
+  return product.value.description;
+});
 
 const productMaterial = useLocalizedText(() => {
-  return product.value.material
-})
+  return product.value.material;
+});
 
 const productDimensions = useLocalizedText(() => {
-  return product.value.dimensions
-})
+  return product.value.dimensions;
+});
 
 const formattedPrice = useFormattedPrice(() => {
-  return product.value.price
-})
+  return product.value.price;
+});
 
 useSeoMeta({
   title: () => `${productTitle.value} — ${t("home.title")}`,
@@ -146,6 +154,18 @@ useSeoMeta({
               }}
             </span>
           </div>
+          <button
+            type="button"
+            :disabled="!product.isAvailable"
+            class="mt-6 min-h-12 w-full rounded-xl bg-brand px-6 font-semibold text-white transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
+            @click="handleAddToCart"
+          >
+            {{
+              product.isAvailable
+                ? $t("cart.addToCart")
+                : $t("cart.unavailable")
+            }}
+          </button>
         </div>
       </div>
     </AppContainer>
