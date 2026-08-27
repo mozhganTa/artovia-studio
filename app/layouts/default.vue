@@ -24,6 +24,10 @@ const { locale } = useI18n();
             {{ $t("navigation.home") }}
           </NuxtLink>
 
+          <NuxtLink :to="localePath('/products')">
+            {{ $t("navigation.shop") }}
+          </NuxtLink>
+
           <NuxtLink
             :to="localePath('/about')"
             class="text-sm font-medium text-muted transition-colors hover:text-brand"

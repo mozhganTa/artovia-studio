@@ -2,6 +2,10 @@ export interface LocalizedText {
   fa: string
   en: string
 }
+export type ProductCategory =
+  | 'copper'
+  | 'ceramic'
+  | 'painting'
 
 export interface ProductPreview {
   id: string
@@ -11,6 +15,7 @@ export interface ProductPreview {
   price: number
   imageUrl?: string
   isAvailable: boolean
+  categorySlug: ProductCategory
 }
 
 export interface Product extends ProductPreview {

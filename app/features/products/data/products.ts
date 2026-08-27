@@ -1,6 +1,6 @@
 import type { Product } from '../types/product'
 
-export const featuredProducts: Product[] = [
+export const products: Product[] = [
   {
     id: '1',
     slug: 'engraved-copper-plate',
@@ -26,6 +26,7 @@ export const featuredProducts: Product[] = [
     },
     price: 4_850_000,
     isAvailable: true,
+    categorySlug: 'copper',
   },
   {
     id: '2',
@@ -52,6 +53,7 @@ export const featuredProducts: Product[] = [
     },
     price: 2_750_000,
     isAvailable: true,
+    categorySlug: 'ceramic',
   },
   {
     id: '3',
@@ -78,5 +80,7 @@ export const featuredProducts: Product[] = [
     },
     price: 3_200_000,
     isAvailable: false,
+    categorySlug: 'painting',
   },
 ]
+export const featuredProducts = products.slice(0, 3)

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import ProductCard from '~/features/products/components/ProductCard.vue'
-import { featuredProducts } from '~/features/products/data/featured-products'
+import { featuredProducts } from '~/features/products/data/products'
 </script>
 
 <template>
