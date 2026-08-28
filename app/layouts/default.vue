@@ -3,6 +3,7 @@ const localePath = useLocalePath();
 const switchLocalePath = useSwitchLocalePath();
 
 const { locale } = useI18n();
+const cartStore = useCartStore();
 </script>
 
 <template>
@@ -24,7 +25,10 @@ const { locale } = useI18n();
             {{ $t("navigation.home") }}
           </NuxtLink>
 
-          <NuxtLink :to="localePath('/products')">
+          <NuxtLink :to="localePath('/products')"
+           class="text-sm font-medium text-muted transition-colors hover:text-brand"
+            exact-active-class="text-brand"
+          >
             {{ $t("navigation.shop") }}
           </NuxtLink>
 
@@ -34,6 +38,21 @@ const { locale } = useI18n();
             exact-active-class="text-brand"
           >
             {{ $t("navigation.about") }}
+          </NuxtLink>
+          <NuxtLink
+            :to="localePath('/cart')"
+            class="relative inline-flex items-center gap-2"
+          >
+            <span>
+              {{ $t("navigation.cart") }}
+            </span>
+
+            <span
+              v-if="cartStore.totalItems > 0"
+              class="inline-flex min-w-6 items-center justify-center rounded-full bg-brand px-1.5 py-0.5 text-xs font-bold text-white"
+            >
+              {{ cartStore.totalItems }}
+            </span>
           </NuxtLink>
         </nav>
 

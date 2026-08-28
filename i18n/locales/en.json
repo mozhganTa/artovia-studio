@@ -2,7 +2,8 @@
   "navigation": {
     "home": "Home",
     "shop": "Shop",
-    "about": "About"
+    "about": "About",
+    "cart": "Cart"
   },
   "home": {
     "title": "Artovia",
@@ -58,6 +59,9 @@
     "catalog": {
       "title": "Handmade Products — Artovia",
       "description": "Shop handmade decorative art, copper pieces, ceramic wall art and artistic paintings from Artovia."
+    },
+    "cart": {
+      "title": "Shopping Cart — Artovia"
     }
   },
   "common": {
@@ -102,5 +106,20 @@
       "description": "Try changing your search term or selected filters.",
       "reset": "Clear filters"
     }
+  },
+  "cart": {
+    "addToCart": "Add to cart",
+    "unavailable": "Unavailable",
+    "title": "Shopping cart",
+    "emptyTitle": "Your cart is empty",
+    "emptyDescription": "You haven't added any products to your cart yet.",
+    "continueShopping": "Browse products",
+    "remove": "Remove",
+    "increaseQuantity": "Increase quantity",
+    "decreaseQuantity": "Decrease quantity",
+    "summary": "Order summary",
+    "subtotal": "Subtotal",
+    "checkout": "Continue to checkout",
+    "loading": "Loading your cart..."
   }
 }

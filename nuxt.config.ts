@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     enabled: true,
   },
 
-  modules: ['@nuxtjs/i18n', '@nuxt/fonts'],
+  modules: ['@nuxtjs/i18n', '@nuxt/fonts', '@pinia/nuxt'],
 
   fonts: {
   families: [
