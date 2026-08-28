@@ -1,6 +1,7 @@
 {
   "navigation": {
     "home": "Home",
+    "shop": "Shop",
     "about": "About"
   },
   "home": {
@@ -53,6 +54,10 @@
     "about": {
       "title": "About Artovia — Our Story and Mission",
       "description": "Learn about Artovia and our mission to showcase unique handcrafted decorative products created by Iranian artisans."
+    },
+    "catalog": {
+      "title": "Handmade Products — Artovia",
+      "description": "Shop handmade decorative art, copper pieces, ceramic wall art and artistic paintings from Artovia."
     }
   },
   "common": {
@@ -64,9 +69,38 @@
     "unavailable": "Unavailable"
   },
   "productDetails": {
-  "breadcrumb": "Breadcrumb",
-  "material": "Material",
-  "dimensions": "Dimensions",
-  "notFound": "The requested product was not found"
-}
+    "breadcrumb": "Breadcrumb",
+    "material": "Material",
+    "dimensions": "Dimensions",
+    "notFound": "The requested product was not found"
+  },
+  "catalog": {
+    "eyebrow": "Artovia shop",
+    "title": "Handmade products",
+    "description": "Explore our collection of handmade decorative pieces and find the right artwork for your space.",
+    "productCount": "{count} products",
+    "empty": "There are no products to display.",
+    "filters": {
+      "category": "Category",
+      "allCategories": "All categories",
+      "copper": "Copper artworks",
+      "ceramic": "Ceramic wall art",
+      "painting": "Paintings"
+    },
+    "sort": {
+      "label": "Sort by",
+      "default": "Featured",
+      "priceAscending": "Price: low to high",
+      "priceDescending": "Price: high to low"
+    },
+    "search": {
+      "label": "Search products",
+      "placeholder": "Search by product name or category..."
+    },
+    "noResults": {
+      "title": "No products found",
+      "description": "Try changing your search term or selected filters.",
+      "reset": "Clear filters"
+    }
+  }
 }
