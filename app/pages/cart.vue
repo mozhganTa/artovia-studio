@@ -94,13 +94,12 @@ useSeoMeta({
             </span>
           </div>
 
-          <button
-            type="button"
-            disabled
-            class="mt-6 min-h-12 w-full cursor-not-allowed rounded-xl bg-brand px-6 font-semibold text-white opacity-60"
+          <NuxtLink
+            :to="localePath('/checkout')"
+            class="mt-6 flex min-h-12 w-full items-center justify-center rounded-xl bg-brand px-6 font-semibold text-white transition hover:opacity-90"
           >
             {{ $t("cart.checkout") }}
-          </button>
+          </NuxtLink>
         </aside>
       </div>
     </AppContainer>
