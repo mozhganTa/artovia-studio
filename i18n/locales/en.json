@@ -62,6 +62,18 @@
     },
     "cart": {
       "title": "Shopping Cart — Artovia"
+    },
+    "checkout": {
+      "title": "Checkout — Artovia"
+    },
+    "paymentSuccess": {
+      "title": "Payment Successful — Artovia"
+    },
+    "paymentFailed": {
+      "title": "Payment Failed — Artovia"
+    },
+    "paymentPending": {
+      "title": "Payment Pending — Artovia"
     }
   },
   "common": {
@@ -121,5 +133,99 @@
     "subtotal": "Subtotal",
     "checkout": "Continue to checkout",
     "loading": "Loading your cart..."
+  },
+  "checkout": {
+    "title": "Checkout",
+    "description": "Enter the information required to deliver your order.",
+    "loading": "Checking your cart...",
+    "steps": {
+      "customer": "Customer details",
+      "shipping": "Shipping details",
+      "review": "Order review"
+    },
+    "customer": {
+      "title": "Customer information",
+      "description": "Enter the contact details of the person receiving the order.",
+      "fullName": "Full name",
+      "fullNamePlaceholder": "For example, Mojgan Taheri",
+      "phone": "Mobile number",
+      "phonePlaceholder": "For example, 09123456789",
+      "email": "Email",
+      "emailPlaceholder": "example{'@'}email.com",
+      "emailHint": "Email is optional.",
+      "continue": "Continue to shipping",
+      "errors": {
+        "fullNameRequired": "Enter your full name.",
+        "phoneRequired": "Enter your mobile number.",
+        "phoneInvalid": "The mobile number must start with 09 and contain 11 digits.",
+        "emailInvalid": "Enter a valid email address."
+      }
+    },
+    "shipping": {
+      "title": "Shipping information",
+      "description": "Enter the delivery address and select a shipping method.",
+      "province": "Province",
+      "provincePlaceholder": "For example, Tehran",
+      "city": "City",
+      "cityPlaceholder": "For example, Tehran",
+      "postalCode": "Postal code",
+      "postalCodePlaceholder": "10-digit postal code",
+      "addressLine": "Full address",
+      "addressPlaceholder": "Street, building number, unit and delivery details",
+      "methodTitle": "Shipping method",
+      "standard": "Standard shipping",
+      "standardDescription": "Estimated delivery within 3–5 business days",
+      "express": "Express shipping",
+      "expressDescription": "Estimated delivery within 1–2 business days",
+      "back": "Back",
+      "continue": "Review order",
+      "errors": {
+        "provinceRequired": "Enter the province.",
+        "cityRequired": "Enter the city.",
+        "postalCodeRequired": "Enter the postal code.",
+        "postalCodeInvalid": "The postal code must contain 10 digits.",
+        "addressRequired": "Enter the full delivery address."
+      }
+    },
+    "review": {
+      "title": "Review your order",
+      "description": "Review your information and final amount before placing the order.",
+      "customerTitle": "Customer information",
+      "shippingTitle": "Shipping information",
+      "itemsTitle": "Order items",
+      "edit": "Edit",
+      "emailNotProvided": "No email address was provided.",
+      "quantity": "Quantity: {count}",
+      "subtotal": "Products subtotal",
+      "shippingCost": "Shipping cost",
+      "total": "Order total",
+      "back": "Back to shipping",
+      "submit": "Place order and pay",
+      "submitting": "Placing your order...",
+      "submitError": "The order could not be placed. Please try again."
+    }
+  },
+  "paymentResult": {
+    "success": {
+      "title": "Payment successful",
+      "description": "Your order has been placed successfully and is being prepared.",
+      "orderNumber": "Order number",
+      "continueShopping": "Continue shopping",
+      "home": "Back to home"
+    },
+    "failed": {
+      "title": "Payment failed",
+      "description": "Your payment was not completed. You can try making the payment again.",
+      "orderNumber": "Order number",
+      "retry": "Try again",
+      "cart": "Back to cart"
+    },
+    "pending": {
+      "title": "Payment is pending",
+      "description": "The payment status has not been finalized yet. It will be updated after verification.",
+      "orderNumber": "Order number",
+      "home": "Back to home",
+      "cart": "View cart"
+    }
   }
 }

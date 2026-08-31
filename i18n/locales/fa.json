@@ -62,6 +62,18 @@
     },
     "cart": {
       "title": "سبد خرید — آرتوویا"
+    },
+    "checkout": {
+      "title": "تکمیل سفارش — آرتوویا"
+    },
+    "paymentSuccess": {
+      "title": "پرداخت موفق — آرتوویا"
+    },
+    "paymentFailed": {
+      "title": "پرداخت ناموفق — آرتوویا"
+    },
+    "paymentPending": {
+      "title": "پرداخت در انتظار بررسی — آرتوویا"
     }
   },
   "common": {
@@ -121,5 +133,99 @@
     "subtotal": "مجموع",
     "checkout": "ادامه فرایند خرید",
     "loading": "در حال بارگذاری سبد خرید..."
+  },
+  "checkout": {
+    "title": "تکمیل سفارش",
+    "description": "اطلاعات لازم برای ارسال سفارش را وارد کنید.",
+    "loading": "در حال بررسی سبد خرید...",
+    "steps": {
+      "customer": "اطلاعات خریدار",
+      "shipping": "اطلاعات ارسال",
+      "review": "مرور سفارش"
+    },
+    "customer": {
+      "title": "اطلاعات خریدار",
+      "description": "اطلاعات تماس شخص تحویل‌گیرنده سفارش را وارد کنید.",
+      "fullName": "نام و نام خانوادگی",
+      "fullNamePlaceholder": "مثلاً مژگان طاهری",
+      "phone": "شماره موبایل",
+      "phonePlaceholder": "مثلاً 09123456789",
+      "email": "ایمیل",
+      "emailPlaceholder": "example{'@'}email.com",
+      "emailHint": "ایمیل اختیاری است.",
+      "continue": "ادامه و ثبت آدرس",
+      "errors": {
+        "fullNameRequired": "نام و نام خانوادگی را وارد کنید.",
+        "phoneRequired": "شماره موبایل را وارد کنید.",
+        "phoneInvalid": "شماره موبایل باید با 09 شروع شود و 11 رقم باشد.",
+        "emailInvalid": "فرمت ایمیل معتبر نیست."
+      }
+    },
+    "shipping": {
+      "title": "اطلاعات ارسال",
+      "description": "آدرس تحویل سفارش و روش ارسال را مشخص کنید.",
+      "province": "استان",
+      "provincePlaceholder": "مثلاً تهران",
+      "city": "شهر",
+      "cityPlaceholder": "مثلاً تهران",
+      "postalCode": "کد پستی",
+      "postalCodePlaceholder": "کد پستی ۱۰ رقمی",
+      "addressLine": "نشانی کامل",
+      "addressPlaceholder": "خیابان، کوچه، پلاک، واحد و توضیحات لازم",
+      "methodTitle": "روش ارسال",
+      "standard": "ارسال استاندارد",
+      "standardDescription": "تحویل تقریبی بین ۳ تا ۵ روز کاری",
+      "express": "ارسال سریع",
+      "expressDescription": "تحویل تقریبی بین ۱ تا ۲ روز کاری",
+      "back": "بازگشت",
+      "continue": "مرور نهایی سفارش",
+      "errors": {
+        "provinceRequired": "استان را وارد کنید.",
+        "cityRequired": "شهر را وارد کنید.",
+        "postalCodeRequired": "کد پستی را وارد کنید.",
+        "postalCodeInvalid": "کد پستی باید ۱۰ رقم باشد.",
+        "addressRequired": "نشانی کامل را وارد کنید."
+      }
+    },
+    "review": {
+      "title": "مرور نهایی سفارش",
+      "description": "قبل از ثبت سفارش، اطلاعات و مبلغ نهایی را بررسی کنید.",
+      "customerTitle": "اطلاعات خریدار",
+      "shippingTitle": "اطلاعات ارسال",
+      "itemsTitle": "محصولات سفارش",
+      "edit": "ویرایش",
+      "emailNotProvided": "ایمیل وارد نشده است.",
+      "quantity": "تعداد: {count}",
+      "subtotal": "مجموع محصولات",
+      "shippingCost": "هزینه ارسال",
+      "total": "مبلغ نهایی",
+      "back": "بازگشت به اطلاعات ارسال",
+      "submit": "ثبت سفارش و پرداخت",
+      "submitting": "در حال ثبت سفارش...",
+      "submitError": "ثبت سفارش انجام نشد. لطفاً دوباره تلاش کنید."
+    }
+  },
+  "paymentResult": {
+    "success": {
+      "title": "پرداخت با موفقیت انجام شد",
+      "description": "سفارش شما با موفقیت ثبت شد و در حال آماده‌سازی است.",
+      "orderNumber": "شماره سفارش",
+      "continueShopping": "ادامه خرید",
+      "home": "بازگشت به صفحه اصلی"
+    },
+    "failed": {
+      "title": "پرداخت ناموفق بود",
+      "description": "پرداخت سفارش تکمیل نشد. می‌توانید دوباره برای پرداخت تلاش کنید.",
+      "orderNumber": "شماره سفارش",
+      "retry": "تلاش مجدد",
+      "cart": "بازگشت به سبد خرید"
+    },
+    "pending": {
+      "title": "پرداخت در انتظار بررسی است",
+      "description": "وضعیت پرداخت هنوز نهایی نشده است. نتیجه پس از بررسی مشخص می‌شود.",
+      "orderNumber": "شماره سفارش",
+      "home": "بازگشت به صفحه اصلی",
+      "cart": "مشاهده سبد خرید"
+    }
   }
 }
